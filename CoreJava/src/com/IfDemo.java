@@ -1,4 +1,4 @@
-package ifdemo;
+package com;
 
 public class IfDemo {
 	static void withdraw()
