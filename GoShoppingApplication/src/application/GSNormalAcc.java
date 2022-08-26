@@ -1,6 +1,6 @@
 package application;
 
-import com.ait.framework.NormalAcc;
+import framework.NormalAcc;
 
 public class GSNormalAcc extends NormalAcc {
 	

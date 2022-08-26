@@ -1,23 +1,19 @@
 package client;
 
-import com.ait.application.MMBankFactory;
-import com.ait.application.MMCurrentAcc;
-import com.ait.application.MMSavingAcc;
+import application.MMBankFactory;
+import application.MMCurrentAcc;
+import application.MMSavingAcc;
 
-public class BankFactoryClient implements BankFactory {
+public class BankFactoryClient {
 
-	@Override
-	public SavingAcc getNewSavingAcc(int accNo, String accNm, float accBal, boolean isSalaried) {
+	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		SavingAcc savingAcc=new MMSavingAcc(accNo, accNm, accBal, isSalaried);
-		return savingAcc;
-	}
+		MMBankFactory obj=new MMBankFactory();
+		MMSavingAcc bharath=(MMSavingAcc) obj.getNewSavingAcc(345566, "Digambar", 10000f, true);
+		bharath.withdraw(5000);
+		MMCurrentAcc bharath1=(MMCurrentAcc) obj.getNewCurrentAcc(365244, "Digambar", 32324f, 50000f);
+		bharath1.withdraw(9000);
 
-	@Override
-	public CurrentAcc getNewCurrentAcc(int accNo, String accNm, float accBal, float creditLimit) {
-		// TODO Auto-generated method stub
-		CurrentAcc currentAcc=new MMCurrentAcc(accNo, accNm, accBal, creditLimit);
-		return currentAcc;
 	}
 
 }

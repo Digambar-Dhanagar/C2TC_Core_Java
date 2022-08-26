@@ -1,8 +1,8 @@
 package application;
 
-import com.ait.framework.PrimeAcc;
+import framework.PrimeAcc;
 
-public class GSPrimeAcc {
+public class GSPrimeAcc extends PrimeAcc{
 	public GSPrimeAcc(int accNo, String accNm, float charges, boolean isPrime) {
 		super(accNo, accNm, charges, isPrime);
 	}

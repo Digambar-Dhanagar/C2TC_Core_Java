@@ -1,7 +1,8 @@
 package application;
-import com.ait.framework.BankFactory;
-import com.ait.framework.CurrentAcc;
-import com.ait.framework.SavingAcc;
+
+import framework.BankFactory;
+import framework.CurrentAcc;
+import framework.SavingAcc;
 
 public class MMBankFactory implements BankFactory{
 	

@@ -1,8 +1,8 @@
 package application;
 
-import com.ait.framework.NormalAcc;
-import com.ait.framework.PrimeAcc;
-import com.ait.framework.ShopFactory;
+import framework.NormalAcc;
+import framework.PrimeAcc;
+import framework.ShopFactory;
 
 public class GoShopFactory implements ShopFactory {
 	@Override

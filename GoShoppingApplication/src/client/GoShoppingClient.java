@@ -1,8 +1,8 @@
 package client;
 
-import com.ait.application.GSNormalAcc;
-import com.ait.application.GSPrimeAcc;
-import com.ait.application.GoShopFactory;
+import application.GSNormalAcc;
+import application.GSPrimeAcc;
+import application.GoShopFactory;
 
 public class GoShoppingClient {
 
@@ -10,7 +10,7 @@ public class GoShoppingClient {
 		// TODO Auto-generated method stub
 		GoShopFactory obj=new GoShopFactory();
 		//Prime Account creation
-		GSPrimeAcc gayatri=(GSPrimeAcc) obj.getNewPrimeAcc(123, "Gayatri", 500.0f, true);
+		GSPrimeAcc gayatri=(GSPrimeAcc) obj.getNewPrimeAcc(123, "Diggu", 500.0f, true);
 		gayatri.bookProduct(gayatri.getCharges());
 		
 		//Normal Account creation

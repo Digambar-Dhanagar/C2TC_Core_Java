@@ -1,5 +1,5 @@
 package application;
-import com.ait.framework.SavingAcc;
+import framework.SavingAcc;
 
 public class MMSavingAcc  extends SavingAcc {
 	public MMSavingAcc(int accNo, String accNm, float accBal, boolean isSalaried) {
